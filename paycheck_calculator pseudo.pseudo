@@ -1,0 +1,20 @@
+# IT 140 Module Three Assignment
+# Paycheck Calculator Pseudocode Template
+
+START paycheck_calculator
+
+    LET hourly_pay = 20
+    GET hours_worked
+
+    IF hours_worked <= 40:
+        LET total_pay = hours_worked*hourly_pay
+    ELSE
+        LET overtime_hours = hours_worked - 40
+        LET overtime_pay = overtime_hours*30
+        LET reg_pay = 40*20
+        LET total_pay = reg_pay + overtime_pay
+    ENDIF
+
+    PUT(total_pay)
+    
+END paycheck_calculator
